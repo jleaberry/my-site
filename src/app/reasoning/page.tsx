@@ -30,7 +30,8 @@ export default async function ReasoningPage() {
         Lane 2 · live decision service
       </p>
       <h1 className="mt-3 text-4xl font-bold">My Reasoning &amp; Uncertainty Service</h1>
-      {/* TODO(yours): one sentence, your words, on what this service does. */}
+      {/* TODO(yours): This services helps reason under uncertainty by analyzing syllogisms, plausibility problems, 
+      and Bernoulli problems. */}
       <p className="mt-4 max-w-prose text-muted">
         Below is the most recent problem my API solved, for each of the three problem types it
         speaks. Every number on this page comes from the same live data my API answered with.
@@ -91,8 +92,8 @@ export default async function ReasoningPage() {
                 {Number(plausibility.answer.posterior).toFixed(3)}
               </strong>
             </p>
-            {/* TODO(yours): one sentence a manager could read, e.g. what this
-                posterior means for the flagged case (Station 2.3). */}
+            {/* TODO(yours): After considring the base rate and the evidence, this is the chance that the 
+            flagged case is actually true. */}
           </div>
         ) : (
           <p className="mt-3 text-muted">No plausibility probe yet.</p>
@@ -122,7 +123,8 @@ export default async function ReasoningPage() {
                 {Number(bernoulli.answer.probabilityStatement).toFixed(2)}
               </span>
             </p>
-            {/* TODO(yours): The expected payoff is a long running average. It doesn't guarantee any single outcome, but helps compare decisions. */}
+            {/* TODO(yours): The expected payoff is a long running average. 
+            It doesn't guarantee any single outcome, but helps compare decisions. */}
           </div>
         ) : (
           <p className="mt-3 text-muted">No Bernoulli probe yet.</p>
