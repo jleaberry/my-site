@@ -1,5 +1,4 @@
 import type { CandidateSummary } from "@/lib/simulator-store";
-
 /**
  * One row per candidate stake fraction, drawn from the summary numbers your
  * decide route saved. Each row shows where the simulated final balances
@@ -11,6 +10,7 @@ import type { CandidateSummary } from "@/lib/simulator-store";
  * multiplication (from $3,000 to $30,000 is the same width as from $30,000
  * to $300,000), so very small and very large balances fit on one chart.
  */
+
 export function CandidateOutcomes({
   candidates,
   buyIn,
