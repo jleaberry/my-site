@@ -13,7 +13,7 @@
  * One word from: "regatta" | "dune" | "orchard" | "noir"
  * (Or invent your own: copy a palette below, change the colors, name it.)
  */
-export const paletteChoice = "regatta";
+export const paletteChoice = "blackthorn2";
 
 /** ── 2. Pick your font pairing ─────────────────────────────────────────
  * One word from: "editorial" | "geometric" | "classic"
@@ -21,7 +21,7 @@ export const paletteChoice = "regatta";
  *   geometric — modern grotesk headings (tech/startup feel)
  *   classic   — high-contrast serif headings (timeless feel)
  */
-export const fontChoice = "editorial";
+export const fontChoice = "blackthorn_font";
 
 /** ── 3. (Optional) Override the accent ─────────────────────────────────
  * Set to any CSS color (e.g. "#c2410c" or "rebeccapurple") to replace the
@@ -92,6 +92,24 @@ export const PALETTES: Record<string, Palette> = {
     accent: "#e8b04b",
     accentInk: "#1a1508",
   },
+  blackthorn: {
+    paper: "#21171d",      // dark plum-black parchment
+    surface: "#2b1d25",    // castle interior panels
+    ink: "#f0e7dc",        // parchment text
+    muted: "#b1a3a0",      // aged notes
+    line: "#4a313d",       // dark frame borders
+    accent: "#7a1f3d",     // rich burgundy
+    accentInk: "#f2d28b",  // antique gold
+  },
+  blackthorn2: {
+    paper: "#e8e4dc",
+    surface: "#f5f2ec",
+    ink: "#2d1d24",
+    muted: "#6e6663",
+    line: "#d4cdc4",
+    accent: "#7a1f3d",
+    accentInk: "#f4eee5",
+  },
 };
 
 /** Font pairings map to the fonts loaded in src/app/fonts.ts. */
@@ -99,6 +117,8 @@ export const FONT_PAIRINGS: Record<string, { heading: string; body: string }> = 
   editorial: { heading: "var(--font-fraunces)", body: "var(--font-inter)" },
   geometric: { heading: "var(--font-space-grotesk)", body: "var(--font-inter)" },
   classic: { heading: "var(--font-lora)", body: "var(--font-inter)" },
+  blackthorn_font: { heading: "var(--font-cormorant-garamond)", body: "var(--font-inter)"},
+  blackthorn_font2: { heading: "var(--font-fraunces)", body: "var(--font-lora)"}
 };
 
 /** The resolved theme the layout applies. You don't need to edit below. */
